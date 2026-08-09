@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Word Hunt </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="data:,"> 
+        <!-- add favicon later -->
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="game.html">Word Hunt</a>
+            <a href="solver.html">Word Solver</a>
+        </nav>
+        
+        <h1>Word Hunt</h1>
+
+        <p> Game Mode </p>
+
+        <div class="page-layout">
+
+            <div class="left-panel">
+                <h2 id="letters"></h2>
+
+                <input id="guess" placeholder="Type a word">
+
+                <div class="btns">
+                    <button id="guessBtn" onclick="guessWord()">
+                        Guess
+                    </button>
+
+                    <button id="giveUpBtn" onclick="giveUp()">
+                        Give Up
+                    </button>
+                </div>
+
+                <p id = "score">
+                    Found: 0 / 0 | Score: 0
+                </p>
+
+                <h3>Found Words</h3>
+                <div id="foundWords"></div>
+
+            </div>
+
+            <div class="right-panel">
+                <div id="game"></div>
+            </div>
+        </div>
+
+        
+
+        <script src="game.js"></script>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+
+/* navigation */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    background-color: #333;
+    padding: 15px;
+
+    margin-bottom: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #4CAF50;
+}
+
+/* home */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+input {
+    font-size: 20px;
+    padding: 10px;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+}
+
+#results {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.btns a,
+.btns button {
+    display: inline-block;
+
+    font-size: 20px;
+    padding: 10px 20px;
+
+    background-color: #333;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    border: none;
+    cursor: pointer;
+}
+
+.btns a:hover,
+.btns button:hover {
+    background-color: #4CAF50;
+}
+
+/* page layout*/
+.page-layout {
+    display: flex;
+    gap: 40px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.left-panel {
+    flex: 1;
+    min-width: 250px;
+}
+
+.right-panel {
+    flex: 2;
+    min-width: 0;
+}
+
+@media (max-width: 700px) {
+    .page-layout {
+        flex-direction: column;
+        width: 95%;
+        gap: 20px;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 100%;
+    }
+
+    #foundWords {
+        max-height: 120px;
+        overflow-y: auto;
+    }
+}
+
+/* game mode */
+
+#game {
+    width: 100%;
+}
+
+.word-group {
+    margin: 25px auto;
+    text-align: center;
+    max-width: 900px;
+}
+
+.word-group h3 {
+    text-align: center;
+}
+
+.word-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.word-slot {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px 14px;
+    min-width: 50px;
+
+    border: 2px solid #333;
+    border-radius: 8px;
+
+    font-family: monospace;
+    font-size: 18px;
+
+    white-space: nowrap;
+}
+
+.word-slot.found {
+    color: green;
+    border-color: green;
+}
+
+.word-slot.missed {
+    color: red;
+    border-color: red;
+}
