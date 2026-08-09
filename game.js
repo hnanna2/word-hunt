@@ -4,7 +4,7 @@ let score = 0;
 
 async function loadGame() {
     // const response = await fetch("http://127.0.0.1:8000/game");
-    const response = await fetch(" https://word-hunt-api.onrender.com/game");
+    const response = await fetch("https://word-hunt-api.onrender.com/game");
 
     const data = await response.json();
 
