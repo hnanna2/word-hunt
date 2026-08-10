@@ -8,6 +8,7 @@ website: https://word-hunt-site.onrender.com/index.html
 ## Components
 - Self-made API to handle scrambling and unscrambling
 - Self-made html, css, and js made frontend
+- word library = enable1.txt from norvig
 
 ## External Sources
 - both API and site hosted on Render
