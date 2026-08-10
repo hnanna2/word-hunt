@@ -3,7 +3,7 @@ This is a website inspired from the scrambled letter game on "8 out of 10 cats d
 
 website: https://word-hunt-site.onrender.com/index.html
 
-* If it isn't loading a game, give the website a minute. The API is starting up. *
+* If it isn't loading a game, give the website a minute. The API is starting up.
 
 ## Components
 - Self-made API to handle scrambling and unscrambling
