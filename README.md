@@ -1,13 +1,13 @@
 # Word Hunt
-This is a website inspired from the scrambled letter game on "8 out of 10 cats does Countdown".
+  This is a website inspired from the scrambled letter game on "8 out of 10 cats does Countdown".
 
 website: https://word-hunt-site.onrender.com/index.html
 
-* If it isn't loading a game, give the website a minute. The API is starting up.
+* If it isn't loading a game, give the website a minute. The API is reactivating.
 
 ## Components
 - Self-made API to handle scrambling and unscrambling
-- html, css, and js made frontend
+- Self-made html, css, and js made frontend
 
 ## External Sources
 - both API and site hosted on Render
@@ -23,8 +23,8 @@ website: https://word-hunt-site.onrender.com/index.html
 ### Word Unscrambler
   The user can provide between 3 and 9 letters into the site, the site will provide all combinations of letters that map to words in its dictionary grouped alphabetically and by length.
 
-
-If you happen upon this, have fun! 
+## Personal Notes
+  If you happen upon this, have fun! :]
 
 ## Updates to be made
 - increased user interactive and aesthetic UI
