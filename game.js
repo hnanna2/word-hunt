@@ -3,7 +3,7 @@ let foundWords = [];
 let score = 0;
 
 async function loadGame() {
-    // const response = await fetch("http://127.0.0.1:8000/game");
+    //const response = await fetch("http://127.0.0.1:8000/game");
     const response = await fetch("https://word-hunt-api.onrender.com/game");
 
     const data = await response.json();
@@ -128,3 +128,15 @@ function giveUp() {
 }
 
 loadGame();
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("guessBtn").click();
+    }
+
+    if (event.key === "Escape") {
+        event.preventDefault();
+        document.getElementById("giveUpBtn").click();
+    }
+});

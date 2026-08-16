@@ -2,7 +2,7 @@ async function unscramble() {
     const letters = document.getElementById("letters").value;
 
     const response = await fetch(
-        // `http://127.0.0.1:8000/unscramble?letters=${letters}`
+        //`http://127.0.0.1:8000/unscramble?letters=${letters}`
         `https://word-hunt-api.onrender.com/unscramble?letters=${letters}`
     );
 
@@ -35,3 +35,11 @@ async function unscramble() {
 
     document.getElementById("results").innerHTML = output;
 }
+
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        unscramble();
+    }
+});
